@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{mathtools}
+\usepackage{mathabx} 
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[OT2,T1]{fontenc}
+\usepackage{tcolorbox}
+\usepackage[keeplastbox]{flushend}
+\usepackage{color}
+\usepackage{tikz-cd}
+\usepackage{appendix}
+\usepackage{babel}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{natbib}
+\usepackage[bb=boondox]{mathalfa}
+\geometry{top=3cm,bottom=3cm,left=2.5cm,right=2.5cm}
+\setlength\parindent{0pt}
+\renewcommand{\baselinestretch}{1.3}
+
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+  \left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+  #1 % the function
+  \vphantom{\big|} % pretend it's a little taller at normal size
+  \right|_{#2} % this is the delimiter
+  }}
+  
+% definition of the "structure"
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{claim}{Claim}
+
+
+\theoremstyle{definition}
+\newtheorem{conj}{Conjecture}
+\newtheorem{defi}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem{exercise}{\textbf{\textcolor{red}{Exercise}}}
+\newtheorem{step}{Step}
+
+\theoremstyle{remark}
+
+\newtheorem*{rem}{Remark}
+
+% define new control sequence
+\newcommand{\homo}{\mathbf{Hom}}
+\newcommand{\Max}{\mathbf{Max}}
+\newcommand{\spec}{\mathbf{Spec}}
+\newcommand{\spm}{\mathbf{Spec}_{max}}
+\newcommand{\Frac}{\mathbf{Frac}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\codim}{\mathrm{codim}}
+\newcommand{\dif}{\text{d}}
+\newcommand{\jac}{\textbf{Jac}}
+\newcommand{\der}{\textbf{Der}}
+\newcommand{\rank}{\text{rank}}
+\newcommand{\sym}{\textbf{Sym}}
+\title{Wely Law}
+\date{\today}
+\author{Deng Zhiyuan\footnote{Email:\ \href{mailto:dengzymathnt@outlook.com}{dengzymathnt@outlook.com}}}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\section{Wely law by Selberg trace formula}
+\subsection{Recollection of Selberg trace formula}
+\subsection{Proof of wely law by Selberg trace formula}
+\section{Wely law with power saving error term by Finis-Lapid method}
+\subsection{Recollection of trace of Hecke operator}
+\subsubsection{Hecke operators}
+
+\end{document}
