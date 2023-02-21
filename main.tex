@@ -83,10 +83,32 @@ The famous metaphor is hearing the drum. If someones hears some sound (spectral 
     
     
     Wely proved
-    \begin{equation*}
+    \begin{equation}\label{weyl1}
         N(\lambda)=\frac{\textbf{Vol}(M)}{(4\pi)^{n/2}\Gamma(\frac{n}{2}+1)}\lambda^{n}+o(\lambda^{n}), \ \ \lambda\rightarrow\infty,
-    \end{equation*}
-    which can be taken an analog of  Rayleigh-Jeans law in physics.
+    \end{equation}
+    in which $\Gamma$ is the Gamma functioin. And this formula
+    can be taken an analog of  Rayleigh-Jeans law in physics: 
+
+\begin{equation*}
+    \rho(v,T)=\frac{8\pi v^{2}}{c^{3}}(kT)(1+ \text{O}(h)).
+\end{equation*}
+
+But this formula \ref{weyl1} doesn't have a finer structure of the eignvalue distribution. So we want a better estimation of the reminder term :
+\begin{equation}\label{reminder}
+   R(\lambda)=N(\lambda)-\frac{\textbf{Vol}(M)}{(4\pi)^{n/2}\Gamma(n/2+1)}.
+\end{equation}
+
+For a closed Riemann manifold, there is the optimal reminder term: $R(\lambda)=O(\lambda^{n-1})$.
+
+For a bounded domain $\Omega\subset \mathbb{R}$, Weyl conjectured that there will be second term:
+
+\begin{equation*}
+    N(\lambda)=\frac{\textbf{Vol}(\Omega)}{6\pi^{2}\lambda^{3}}-\frac{\textbf{Vol}(\partial\Omega)}{16\pi}\lambda^{2}+o(\lambda^{2}).
+\end{equation*}
+
+
+
+    
 While the non-compact case is more complicated with one more term:
     \begin{equation*}
       M(\lambda)=-\frac{1}{4\pi}\int^{\lambda}_{-\lambda}\frac{\phi'}{\phi}(\frac{1}{2}+ir)\dif r,
